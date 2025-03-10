@@ -1,0 +1,58 @@
+﻿* {
+    font-family: Thaoma, Verdana, Geneva, sans-serif;
+    margin: 0 auto;
+    color: #236BB3;
+}
+
+a {
+    text-decoration: none;
+}
+
+    /*psuedo classi*/
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+#container {
+    margin-top: 100px;
+    width: 300px;
+}
+
+#logo {
+    width: 70%;
+    text-align: center;
+    height: auto;
+    /*max-height:300px*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#main {
+    border: 1px solid #236BB3;
+    padding: 20px 10px 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 12px #191915;
+}
+
+.asx {
+    text-align: left;
+}
+
+.adx {
+    text-align: right;
+}
+
+.piccolo {
+    font-size: smaller;
+}
+
+.titolo {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

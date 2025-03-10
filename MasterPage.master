@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Home Page</title>
+    <link href="css/mainStyleSheet.css" rel="stylesheet" />
+    <link href="css/dbStile.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <div class="top">
+                <div class="menu">
+                    <nav>
+                        <ul class='main-nav'>
+                            <li>
+                                <img class="logo" src="../images/logo_deafult_page.png" />
+
+                            </li>
+                            <li class='has-sub'><a href='#'>Marche </a>
+                                <ul class='drop-down'>
+                                    <li><a href="Marche_Inserimento.aspx">Nuova Marca </a></li>
+                                    <li><a href="Marche_Modifica.aspx">Modifica Marche </a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'>Modelli </a>
+                                <ul class='drop-down'>
+                                    <li><a href="Modelli_Inserimento.aspx">Nuovo Modello </a></li>
+                                    <li><a href="Modelli_Modifica.aspx">Modifica Modello </a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'>Autosaloni </a>
+                                <ul class='drop-down'>
+                                    <li><a href="Autosaloni_Inserimento.aspx">Nuovo Autosalone </a></li>
+                                    <li><a href="Autosaloni_Modifica.aspx">Modifica Autosaloni </a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'>Dipendenti </a>
+                                <ul class='drop-down'>
+                                    <%--<li><a href="Dipendenti_Inserimento.aspx"">Nuovo Dipendente </a></li>--%>
+                                    <li><a href="Dipendenti_Inserimento.aspx">Nuovo Dipendente </a></li>
+                                    <li><a href="Dipendenti_Modifica.aspx">Modifica Dipendente </a></li>
+
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'>Clienti </a>
+                                <ul class='drop-down'>
+                                    <li><a href="Clienti_Inserimento.aspx">Nuovo Cliente </a></li>
+                                    <li><a href="Clienti_Modifica.aspx">Modifica Clienti </a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'>Automobili </a>
+                                <ul class='drop-down'>
+                                    <li><a href="Automobili_Spese.aspx">Spese </a></li>
+                                    <li><a href="Automobili_Inserimento.aspx">Nuova Automobile </a></li>
+                                    <li><a href="Automobili_Modifica.aspx">Modifica Automobili </a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'>Statistiche </a>
+                                <ul class='drop-down'>
+                                    <li><a href="Statistiche_Acquisti.aspx">Acquisti </a></li>
+                                    <li><a href="Statistiche_Vendite.aspx">Vendite </a></li>
+                                </ul>
+                            </li>
+                            <li class='has-sub'><a href='#'>Utente </a>
+                                <ul class='drop-down'>
+                                    <li><a href="Utente_Griglia.aspx">Griglia </a></li>
+                                </ul>
+                            </li>
+                            <li><a href="Logout.aspx">Logout</a></li>
+                            <li><a href="ModificaProfilo.aspx">Modifica Profilo</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="main">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+            <div class="footer">
+                <p>Autosaloni s.r.l &copy; Via Vesuvio, 4 Napoli NA 80126 </p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
