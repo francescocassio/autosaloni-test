@@ -5,9 +5,9 @@
 Per eseguire correttamente il progetto, segui questi passaggi:
 
 1. **Copia il file di esempio della configurazione:**  
-   Nella cartella `App_Code/`, c'è un file chiamato **`DBConfigExample.cs`**. Copialo e rinominalo in **`DBConfig.cs`**.
+   Nella cartella `App_Code/`, c'è un file chiamato **`DBConfigExample.cs`**. Creane una copia e salvala come **`DBConfig.cs`**.
 
-2. **Modifica `DBConfig.cs` con i tuoi parametri di connessione:**  
+2. **Modifica `DBConfig.cs` con la classe DBConfig con i tuoi parametri di connessione:**  
    Apri il file e personalizza questa stringa di connessione con il tuo server SQL:
    ```csharp
    public DBConfig()
