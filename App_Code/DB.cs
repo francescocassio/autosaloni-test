@@ -15,7 +15,12 @@ public class DB
     public string query;
     public DB()
     {
-        conn.ConnectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+        conn.ConnectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING", EnvironmentVariableTarget.Machine);
+        string connStr = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING", EnvironmentVariableTarget.Machine);
+        System.Diagnostics.Debug.WriteLine("Il valore della variabile è: " + connStr);
+
+
+
         if (string.IsNullOrEmpty(conn.ConnectionString))
         {
             throw new Exception("La variabile d'ambiente DB_CONNECTION_STRING non è impostata. Configurala prima di eseguire l'applicazione.");
