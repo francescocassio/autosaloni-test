@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 DBConfig.cs
+App_Code/DBConfig.cs
