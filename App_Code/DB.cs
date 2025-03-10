@@ -15,8 +15,11 @@ public class DB
     public string query;
     public DB()
     {
-        DBConfig config = new DBConfig(); // Crea un'istanza di DBConfig
-        conn.ConnectionString = config.GetConnectionString(); // Recupera la stringa di connessione
+        conn.ConnectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING");
+        if (string.IsNullOrEmpty(conn.ConnectionString))
+        {
+            throw new Exception("La variabile d'ambiente DB_CONNECTION_STRING non è impostata. Configurala prima di eseguire l'applicazione.");
+        }
         cmd.Connection = conn;
         cmd.CommandType = CommandType.StoredProcedure;
     }
