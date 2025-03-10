@@ -16,8 +16,7 @@ public class DB
     public DB()
     {
         conn.ConnectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING", EnvironmentVariableTarget.Machine);
-        string connStr = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING", EnvironmentVariableTarget.Machine);
-        System.Diagnostics.Debug.WriteLine("Il valore della variabile è: " + connStr);
+        System.Diagnostics.Debug.WriteLine("Il valore della variabile è: " + conn.ConnectionString);
 
 
 
