@@ -5,7 +5,8 @@
         
 
         @keyframes colorChange {
-            0% { color: #ff5733; }
+            0% { color: #ff5733; opacity: 0; }
+            10% { opacity: 1; }
             33% { color: #ffc300; }
             66% { color: #33ff57; }
             100% { color: #339fff; }
