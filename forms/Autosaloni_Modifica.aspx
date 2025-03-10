@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="content">
         <div class="title">
-            <p>Modifica una autosalone già registrato</p>
+            <p>Modifica una autosalone già registrato riga casuale aggiunta</p>
         </div>
         <div class="griglia">
             <asp:GridView ID="griglia" runat="server" DataKeyNames="K_Salone" CssClass="grid" BackColor="White" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" CellPadding="3" OnRowDataBound="griglia_RowDataBound">
