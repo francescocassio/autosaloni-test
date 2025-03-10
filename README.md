@@ -23,7 +23,8 @@ Per eseguire correttamente il progetto, segui questi passaggi:
 
 ## 🛠️ Dipendenze NuGet
 
-Dopo aver clonato il repository, esegui il seguente comando per reinstallare i pacchetti NuGet mancanti:
+Dopo aver clonato il repository, esegui il seguente comando per reinstallare i pacchetti NuGet mancanti:  
+Strumenti > Gestione pacchetti NUget > Console di gestione pacchetti
 ```sh
 Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -reinstall
 ```
