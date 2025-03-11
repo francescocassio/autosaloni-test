@@ -8,7 +8,7 @@ using System.Web;
 
 public class DB
 {
-
+    //commento 2 ciaooo
     SqlConnection conn = new SqlConnection();
     SqlDataAdapter DA = new SqlDataAdapter();
     public SqlCommand cmd = new SqlCommand();
