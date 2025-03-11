@@ -7,6 +7,7 @@ public class DBConfigExample
     public DBConfigExample()
     {
         // Modifica questa stringa con i tuoi parametri locali
+        //commento luca ciao
         connectionString = "Data Source=FRANCESCO\\SQLEXPRESS;Initial Catalog=AUTOSALONI;Integrated Security=True;Encrypt=False";
     }
 
